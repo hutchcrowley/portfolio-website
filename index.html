@@ -10,7 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;500;700;900&display=swap" rel="stylesheet"> 
+		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="index.css" /> -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -31,8 +33,8 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
+								<li><a href="portfolio.html">Portfolio</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -40,7 +42,7 @@
 
 				<!-- Banner -->
 					<section id="banner">
-						<section id='wrapper'>
+						<section id='wrapper' class='header-wrapper'>
 						<div class="inner">
 							<div class="logo"><span class="icon fa-keyboard"></span></div>
 							<p >Software Dev</p>
@@ -52,22 +54,34 @@
 					</section>
 
 				<!-- Wrapper -->
-					<section id="wrapper">
+					<section id="wrapper" class='body-wrapper'>
+
+						<div class="panel span-0-75 color4-alt" id="start-div" data-position="top">
+							<ul class="actions">
+							  <li>
+								<a href="#gallery-intro" class="button primary color2 circle icon solid fa-angle-right start"
+								  id="start-button">
+								</a>
+							  </li>
+							  <li>
+								<p>Check out the gallery!</p>
+							  </li>
+							</ul>
 
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/california-palms.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Magna arcu feugiat</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">Photography</h2>
+										<p>I like to build my own assets when I can. This includes taking lots of pictures! </p>
+										<a href="gallery.html" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
+							<!-- <section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 									<div class="content">
@@ -76,10 +90,10 @@
 										<a href="#" class="special">Learn more</a>
 									</div>
 								</div>
-							</section>
+							</section> -->
 
 						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
+							<!-- <section id="three" class="wrapper spotlight style3">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="content">
@@ -88,22 +102,28 @@
 										<a href="#" class="special">Learn more</a>
 									</div>
 								</div>
-							</section>
+							</section> -->
 
 						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-									<section class="features">
+											<h2 class="major">My ReverbNation</h2>
+											<p>When I'm not learning the latest software development tech, I like to make a little music. I use Logic Pro X, Reason 10, and lots of synthesizers!</p>
+										<section class="features">
+
 										     <!-- ReverbNation Embed Player -->
 
-        <iframe width="100" height="620" scrolling="no" frameborder="yes" src="https://www.reverbnation.com/widget_code/html_widget/artist_558348?widget_id=55&pwc[included_songs]=1&context_type=page_object&spoid=artist_558348" style="width:0px;min-width:100%;max-width:100%;"></iframe>
+											<iframe 
+												width="100" 
+												height="620" 
+												scrolling="no" 
+												frameborder="yes" 
+												src="https://www.reverbnation.com/widget_code/html_widget/artist_558348?widget_id=55&pwc[included_songs]=1&context_type=page_object&spoid=artist_558348" 
+												style="width:0px;min-width:100%;max-width:100%;"
+											>
+											</iframe>
 
-									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
+										</section>
 								</div>
 							</section>
 

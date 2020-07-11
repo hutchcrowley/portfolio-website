@@ -2781,6 +2781,7 @@ body.is-menu-visible #menu .inner {
 
 #banner {
 	height: 80vh;
+	display: flex;
 }
 
 #banner #wrapper {
