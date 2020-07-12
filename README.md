@@ -1,4 +1,8 @@
-# Build A Portfolio Website
+# James H Crowley - Web Portfolio
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/26c9cf5f-74ff-4fd9-8d14-ca20d81b9cff/deploy-status)](https://app.netlify.com/sites/james-crowley-web-development-portfolio/deploys)
+
+## Build A Portfolio Website
 
 With all of the projects you will be working on here at Lambda School, you will need somewhere to house them! There is no better opportunity to learn and show off your skills than a beautiful portfolio website.
 

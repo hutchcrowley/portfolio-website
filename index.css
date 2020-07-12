@@ -1612,6 +1612,16 @@ video {
   vertical-align: baseline;
 }
 
+body,
+input,
+select,
+textarea {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
 article,
 aside,
 details,
@@ -1676,25 +1686,6 @@ textarea {
   appearance: none;
 }
 
-/* Styles for AMPLITUDE.JS */
-div.amplitude-play-pause {
-  width: 74px;
-  height: 74px;
-  cursor: pointer;
-  float: left;
-  margin-left: 10px;
-}
-
-div.amplitude-play-pause.amplitude-paused {
-  background: url("../img/play.svg");
-  background-size: cover;
-}
-
-div.amplitude-play-pause.amplitude-playing {
-  background: url("../img/pause.svg");
-  background-size: cover;
-}
-
 /* Basic */
 @-ms-viewport {
   width: device-width;
@@ -1734,10 +1725,6 @@ body.is-preload *:after {
 }
 
 /* Type */
-html {
-  font-size: 18pt;
-}
-
 @media screen and (max-width: 1680px) {
   html {
     font-size: 14pt;
@@ -1746,6 +1733,13 @@ html {
 @media screen and (max-width: 1280px) {
   html {
     font-size: 12pt;
+  }
+
+  body,
+input,
+select,
+textarea {
+    padding: 0 auto;
   }
 }
 @media screen and (max-width: 736px) {
@@ -1761,16 +1755,6 @@ html {
 body {
   background-color: #ffffff;
   color: #000000;
-}
-
-body,
-input,
-select,
-textarea {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.65;
 }
 
 content color0 span-3-75 {
@@ -1807,18 +1791,6 @@ p {
 
 p.major {
   font-size: 1.25rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 300;
-  line-height: 1.375;
-  letter-spacing: -0.05em;
-  margin: 0 0 1rem 0;
 }
 
 h1 a,
@@ -7271,11 +7243,18 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 }
 
 /* Wrapper (style1) */
-.wrapper.style1 > .inner {
-  padding: 7rem 3.5rem 5rem 3.5rem;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 64rem;
+.wrapper.style1 > .inner > .links h1,
+.wrapper.style1 > .inner > .links h2,
+.wrapper.style1 > .inner > .links h3,
+.wrapper.style1 > .inner > .links h4,
+.wrapper.style1 > .inner > .links h5,
+.wrapper.style1 > .inner > .links h6 {
+  color: #07e3ee;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin: 15px 0px 0 73px;
+  text-transform: uppercase;
 }
 
 .wrapper.style1 > .inner.medium {
@@ -8267,6 +8246,49 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #wrapper .header-wrapper {
   display: flex;
   clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%);
+}
+#wrapper html {
+  font-size: 18pt;
+}
+#wrapper html body,
+#wrapper html input,
+#wrapper html select,
+#wrapper html textarea {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.65;
+}
+#wrapper html body h1,
+#wrapper html body h2,
+#wrapper html body h3,
+#wrapper html body h4,
+#wrapper html body h5,
+#wrapper html body h6,
+#wrapper html input h1,
+#wrapper html input h2,
+#wrapper html input h3,
+#wrapper html input h4,
+#wrapper html input h5,
+#wrapper html input h6,
+#wrapper html select h1,
+#wrapper html select h2,
+#wrapper html select h3,
+#wrapper html select h4,
+#wrapper html select h5,
+#wrapper html select h6,
+#wrapper html textarea h1,
+#wrapper html textarea h2,
+#wrapper html textarea h3,
+#wrapper html textarea h4,
+#wrapper html textarea h5,
+#wrapper html textarea h6 {
+  color: #07e3ee;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin: 15px 0px 0 73px;
+  text-transform: uppercase;
 }
 
 #wrapper > .invert {
